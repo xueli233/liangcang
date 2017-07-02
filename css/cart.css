@@ -1,0 +1,18 @@
+.operate {
+  /*加减号*/
+  width: 30px;
+  line-height: 30px;
+  background: #ccc;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 10px;
+}
+.minus {
+  display: inline-block;
+}
+.goods_number {
+  display: inline-block;
+}
+.plus {
+  display: inline-block;
+}

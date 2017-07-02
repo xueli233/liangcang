@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>购物车</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/common.js"></script>
+
+</head>
+<body>
+  <h2>您的购物清单</h2>
+  <div class="container">
+    <div id="shoppingcarList" style="margin-top:20px">
+      <!--购物车列表-->
+      <table class="carTab">
+        <tbody>
+        <tr>
+          <th class="text1" width="110">
+            <input type="checkbox" name="" id="selectAll" checked="true">全选
+          </th>
+          <th width="300">良品</th>
+          <th width="120">数量</th>
+          <th width="160">单价(元)</th>
+          <th width="160">小计(元)</th>
+          <th>操作</th>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--总价-->
+    <div id="shoppingcarOptV2">
+      <input type="hidden" name="payCartIds" id="payCartIds" value="">
+      <input type="hidden" name="payMoney" id="payMoney" value="0.00">
+      <input type="hidden" name="payAmount" id="payAmount" value="0">
+      <p>良品总价 <font style="font-size:18px;">/</font> <span class="priceNo">¥<font id="payMoneyTxt">0.00</font></span></p>
+      <p class="origPrice" id="origPrice" style="display: none;"> &nbsp;¥<span>0.00</span>&nbsp;</p>
+      <!--<p style="display:none;color:#d20019;text-decoration:;" id="origsave"> &nbsp;为您节省 <span>1060</span>元&nbsp;</p>-->
+      <p><input type="button" class="checkoutBtn" onclick="submitCart();" value="立即结算"></p>
+    </div>
+  </div>
+  <!--js文件引入-->
+  <script src="../js/cart.js"></script>
+
+</body>
+</html>

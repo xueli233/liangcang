@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>用户注册</title>
+  <style>
+    span{
+      color:#666;
+      font-size:10px;
+    }
+    .success,.error{
+      display: none;
+    }
+    .error{
+      color: #f90;
+    }
+  </style>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/register.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="main-c">
+    <!--
+     ##表单验证
+     - 用户名,密码,确认密码,同意协议,完成提交
+    -->
+    <table action="">
+      <tr>
+        <th>用户名: </th>
+        <td><input type="text" name="username"><span class="success">用户名可用</span><span class="error">用户名已存在</span></td>
+      </tr>
+      <tr>
+        <th>密码: </th>
+        <td> <input type="password" name="password"> </td>
+      <tr>
+      <tr>
+        <th>确认密码: </th>
+        <td><input type="password" name="repwd"></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><input type="checkbox" name="agreeLC" id="" checked> <span>同意 <a href="#">良仓注册条款</a></span></td>
+      <tr>
+      <tr>
+        <th></th>
+        <td><input type="button" id="register" value="完成注册"><a href="login.html">登录</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>

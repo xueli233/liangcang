@@ -1,0 +1,7 @@
+.nav {
+  /*导航*/
+}
+.nav li {
+  float: left;
+  padding: 0 8px;
+}

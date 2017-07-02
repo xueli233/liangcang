@@ -1,0 +1,180 @@
+.c {
+  /*居中样式*/
+  width: 1000px;
+  margin: 0 auto;
+}
+.header {
+  /*header的样式*/
+  width: 100%;
+  height: 56px;
+  background-color: #25292e;
+}
+.head-top {
+  /*header顶部*/
+  height: 56px;
+}
+.head-top .logo {
+  /*logo*/
+  float: left;
+  width: 95px;
+  height: 38px;
+  background: url(../images/icon.png) 0 0 no-repeat;
+  margin-top: 8px;
+}
+.head-top .head-nav {
+  /*顶部导航*/
+  float: right;
+  line-height: 56px;
+}
+.head-top .head-nav li {
+  float: left;
+  color: #666;
+  padding: 0 6px;
+}
+.head-top .head-nav li a {
+  color: #666;
+}
+.head-top .head-nav li .login,
+.head-top .head-nav li .register {
+  /*登录,注册*/
+  color: #ccc;
+  padding-left: 8px;
+}
+.footer {
+  /*footer样式*/
+  width: 100%;
+  background-color: #fbfdfe;
+  height: 200px;
+  padding-top: 48px;
+}
+.footer .foot-h {
+  /*标题*/
+  width: 179px;
+  height: 20px;
+  background: url(../images/icon.png) -172px -355px no-repeat;
+  padding-left: 45px;
+  margin: 0 auto;
+}
+.footer .foot-h h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer .foot-b {
+  /*列表*/
+  padding-top: 45px;
+}
+.footer .foot-b li {
+  /*列表li*/
+  float: left;
+  width: 25%;
+  height: 60px;
+}
+.footer .foot-b li > span {
+  float: left;
+  width: 56px;
+  height: 60px;
+  margin-right: 20px;
+}
+.footer .foot-b li .cn-h {
+  /*中文字体*/
+  font-size: 13px;
+  line-height: 38px;
+}
+.footer .foot-b li .en-c {
+  /*英文字体*/
+  font-size: 10px;
+  color: #ccd5e1;
+}
+.footer .foot-b .fore1 span {
+  /*全球精品*/
+  background: url(../images/icon.png) 0 -355px no-repeat;
+}
+.footer .foot-b .fore2 span {
+  /*正品保证*/
+  background: url(../images/icon.png) -152px -218px no-repeat;
+}
+.footer .foot-b .fore3 span {
+  /*全场包邮*/
+  background: url(../images/icon.png) -56px -355px no-repeat;
+}
+.footer .foot-b .fore4 span {
+  /*联系电话*/
+  background: url(../images/icon.png) -114px -355px no-repeat;
+}
+.foot-wrap {
+  /*copyright*/
+  width: 100%;
+  height: 186px;
+  padding-top: 37px;
+  background-color: #25292e;
+}
+.foot-wrap p {
+  color: #5c5c5c;
+  font-size: 12px;
+  line-height: 18px;
+}
+.foot-wrap .download {
+  /*客户端下载*/
+  padding-left: 65px;
+  display: inline-block;
+  background: url(../images/icon.png) -175px 0 no-repeat;
+}
+.foot-wrap .download p {
+  line-height: 22px;
+  font-size: 12px;
+}
+.foot-wrap .share {
+  /*分享*/
+  padding-top: 10px;
+  float: right;
+}
+.foot-wrap .share li {
+  float: left;
+  margin: 0 14px;
+}
+.foot-wrap .share li a {
+  float: left;
+}
+.foot-wrap .share .wechat {
+  /*微信*/
+  width: 25px;
+  height: 17px;
+  background: url(../images/icon.png) -100px -1px no-repeat;
+}
+.foot-wrap .share .weibo {
+  /*微博*/
+  width: 23px;
+  height: 19px;
+  background: url(../images/icon.png) -150px 0 no-repeat;
+}
+.foot-wrap .share .doubian {
+  /*豆辨*/
+  width: 18px;
+  height: 17px;
+  background: url(../images/icon.png) -129px 0 no-repeat;
+}
+.foot-wrap .share .wechat:hover {
+  /*微信hover*/
+  background: url(../images/icon.png) -100px -24px no-repeat;
+}
+.foot-wrap .share .weibo:hover {
+  /*微博hover*/
+  background: url(../images/icon.png) -150px -22px no-repeat;
+}
+.foot-wrap .share .doubian:hover {
+  /*豆辨hover*/
+  background: url(../images/icon.png) -129px -24px no-repeat;
+}
+.foot-wrap .b-nav {
+  /*底部导航*/
+  overflow: hidden;
+}
+.foot-wrap .b-nav li {
+  float: left;
+  padding: 0 4px;
+  color: #5c5c5c;
+}
+.foot-wrap .b-nav li a {
+  font-size: 12px;
+  color: #5c5c5c;
+}

@@ -1,0 +1,70 @@
+/*header的样式*/
+.header {
+  width: 100%;
+  height: 56px;
+  background-color: #25292e;
+}
+/*分类列表*/
+.main {
+  overflow: hidden;
+  /*导航的内容部分*/
+}
+.main .nav {
+  /*导航*/
+  overflow: hidden;
+  line-height: 48px;
+  position: relative;
+  z-index: 2;
+}
+.main .nav .nav-list li {
+  float: left;
+  width: 164px;
+  border-bottom: 4px solid #ededed;
+  text-align: center;
+  cursor: pointer;
+}
+.main .nav .nav-list li a {
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+.main .nav .nav-list li:hover {
+  border-bottom: 4px solid #000;
+}
+.main .nav .nav-list .search {
+  /*搜索*/
+  width: 180px;
+}
+.main .nav .nav-list .search a {
+  float: right;
+}
+.main .nav .nav-list .search:hover {
+  border-bottom: 4px solid #ededed;
+}
+.main #goods-category {
+  /*商店列表*/
+  position: absolute;
+  z-index: 3;
+  top: 110px;
+}
+.main #goods-category li {
+  float: left;
+}
+.main .banner {
+  /*banner的样式*/
+  position: relative;
+  z-index: 1;
+  height: 477px;
+}
+.main .goods {
+  /*商品详情*/
+}
+.main .goods li {
+  float: left;
+  padding-left: 12px;
+  width: 20%;
+}
+.main .goods li img {
+  width: 200px;
+  height: 200px;
+}

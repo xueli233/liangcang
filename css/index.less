@@ -1,0 +1,73 @@
+/*header的样式*/
+.header{
+  width: 100%;
+  height: 56px;
+  background-color: #25292e;
+}
+/*分类列表*/
+.main{
+  overflow: hidden;
+  /*导航的内容部分*/
+  @nav-h: 48px;
+  @li-w:164px;
+  .nav{
+    /*导航*/
+    overflow: hidden;
+    line-height: @nav-h;
+    position: relative;
+    z-index: 2;
+    .nav-list li{
+      float: left;
+      width: @li-w;
+      border-bottom: 4px solid #ededed;
+      text-align: center;
+      cursor: pointer;
+      a{
+        font-weight:700;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    .nav-list li:hover{
+      border-bottom: 4px solid #000;
+    }
+    .nav-list .search{
+      /*搜索*/
+      width: 180px;
+      a{
+        float: right;
+      }
+    }
+    .nav-list .search:hover{
+      //float: right;
+      border-bottom: 4px solid #ededed;
+    }
+  }
+  #goods-category{
+    /*商店列表*/
+    position: absolute;
+    z-index: 3;
+    top: 110px;
+    li{
+      float: left;
+    }
+  }
+  .banner{
+    /*banner的样式*/
+    position: relative;
+    z-index: 1;
+    height: 477px;
+  }
+  .goods{
+  /*商品详情*/
+    li{
+      float: left;
+      padding-left:12px;
+      width: 20%;
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

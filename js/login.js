@@ -23,7 +23,7 @@ $(function () {
         if(callbackurl){
           location.assign(callbackurl);
         } else {
-          location.assign('D:/js/project/liangcang-1/index.html');
+          location.assign('/');
         }
       }
     });

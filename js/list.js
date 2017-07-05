@@ -10,7 +10,12 @@ if(goodsUl){
       if (i % 5 === 0) {
         diyClassName = "end";
       }
-      $('#goods-category').append('<li class="' + diyClassName + '"><img src="../images/img-' + obj.cat_id + '.png" /><a href="index.html?cat_id=' + obj.cat_id + '">' + obj.cat_name + '</a></li>')
+      $('#goods-category').append('<li class="' + diyClassName + '">' +
+            '<a href="index.html?cat_id=' + obj.cat_id + '">' +
+              '<img src="../images/img-'+obj.cat_id + '.png" />' +
+              '<p>'+obj.cat_name + '</p>' +
+            '</a>' +
+          '</li>')
     }
   });
 }

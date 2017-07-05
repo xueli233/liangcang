@@ -5,11 +5,26 @@
   <title>购物车</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/cart.css">
-  <script src="../js/jquery.js"></script>
-  <script src="../js/common.js"></script>
-
+  <link rel="stylesheet" href="../css/base.css">
 </head>
 <body>
+<!--header的内容-->
+<div class="header">
+  <!--header顶部-->
+  <div class="head-top c">
+    <a href="../" class="logo"></a>
+    <!--顶部导航-->
+    <ul class="head-nav">
+      <li><a href="login.html" class="login">登录</a><a href="register.html" class="register">注册</a></li>
+      <li>|</li>
+      <li><a href="cart.html">购物车</a></li>
+      <li>|</li>
+      <li><a href="#">消息</a></li>
+      <li>|</li>
+      <li><a href="#">添加良品</a></li>
+    </ul>
+  </div>
+</div>
   <h2>您的购物清单</h2>
   <div class="container">
     <div id="shoppingcarList" style="margin-top:20px">
@@ -41,8 +56,80 @@
       <p><input type="button" class="checkoutBtn" onclick="submitCart();" value="立即结算"></p>
     </div>
   </div>
-  <!--js文件引入-->
-  <script src="../js/cart.js"></script>
+  <!--footer的内容-->
+  <div class="footer">
+    <div class="c">
+      <!--标题-->
+      <div class="foot-h">
+        <h3>良仓商店 / OUR SHOP</h3>
+      </div>
+      <!--列表-->
+      <ul class="foot-b">
+        <li class="fore1">
+          <span></span>
+          <p class="cn-h">全球精品</p>
+          <p class="en-c">Global Selections</p>
+        </li>
+        <li class="fore2">
+          <span></span>
+          <p class="cn-h">正品保证</p>
+          <p class="en-c">Authenticity Guaranteed</p>
+        </li>
+        <li class="fore3">
+          <span></span>
+          <p class="cn-h">全场包邮</p>
+          <p class="en-c">Free Delivery</p>
+        </li>
+        <li class="fore4">
+          <span></span>
+          <p class="cn-h">400-897-6336</p>
+          <p class="en-c">工作日 09:00-18:00</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--copyright-->
+  <div class="foot-wrap">
+    <div class="c">
+      <!--客户端下载-->
+      <div class="download">
+        <p>iPhone Android</p>
+        <p>客户端下载</p>
+      </div>
+      <!--分享-->
+      <ul class="share">
+        <li ><a class="wechat" href="#"></a></li>
+        <li ><a class="weibo"href="#"></a></li>
+        <li ><a class="doubian" href="#"></a></li>
+      </ul>
+      <!--底部导航-->
+      <ul class="b-nav">
+        <li><a href="#">关于良仓</a></li>
+        <li>|</li>
+        <li><a href="#">服务协议</a></li>
+        <li>|</li>
+        <li><a href="#">隐私保护政策</a></li>
+        <li>|</li>
+        <li><a href="#">使用指南</a></li>
+        <li>|</li>
+        <li><a href="#">联系我们</a></li>
+        <li>|</li>
+        <li><a href="#">加入我们</a></li>
+        <li>|</li>
+        <li><a href="#">友情链接</a></li>
+        <li>|</li>
+        <li><a href="#">私信良仓</a></li>
+      </ul>
+      <p> &copyright; 2013-2015 北京良仓文化传播有限公司版权所有 京 ICP 备 号-1 京公网安备 11010502025627</p>
+      <p>  公司名称：北京良仓文化传播有限公司  电话：010-58263516 </p>
+      <p>  公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+      <p>  社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557  </p>
+      <p>  图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+    </div>
+  </div>
 
 </body>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/cart.js"></script>
 </html>

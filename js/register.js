@@ -18,11 +18,11 @@ $(function () {
       "success": function (response) {
         console.log(response);
         if(response.code === 0){
-          $('span[class="success"]').show();
-          $("span[class='error']").hide();
+          $("em[class='error']").hide();
+          $('em[class="success"]').show();
         }else if(response.code ===2001){
-          $('span[class="success"]').hide();
-          $("span[class='error']").show();
+          $('em[class="success"]').hide();
+          $("em[class='error']").show();
         }
       }
     });
@@ -68,7 +68,7 @@ $(function () {
         },
         "success": function (response) {
           console.log(response);
-          location.assign('/liangcang/index.html');
+          location.assign('/cn/login.html');
         }
       });
 

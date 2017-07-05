@@ -7,15 +7,13 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
   <!--<link rel="stylesheet" href="css/list.css">-->
-  <script src="js/jquery.js"></script>
-  <script src="js/common.js"></script>
 </head>
 <body>
   <!--header的内容-->
   <div class="header">
     <!--header顶部-->
     <div class="head-top c">
-      <a href="#" class="logo"></a>
+      <a href="javacript:" class="logo"></a>
       <!--顶部导航-->
       <ul class="head-nav">
         <li><a href="cn/login.html" class="login">登录</a><a href="cn/register.html" class="register">注册</a></li>
@@ -36,7 +34,10 @@
       <!--导航与搜索-->
       <ul class="nav-list">
         <li><a href="">首页</a></li>
-        <li class="shop"><a href="">商店</a></li>
+        <li class="shop">
+          <a href="">商店</a>
+          <ul id="goods-category"></ul>
+        </li>
         <li><a href="">杂志</a></li>
         <li><a href="">分享</a></li>
         <li><a href="">达人</a></li>
@@ -45,7 +46,6 @@
         </li>
       </ul>
     </div>
-    <ul id="goods-category"></ul>
     <!--banner的内容-->
     <div class="banner">
 
@@ -127,5 +127,9 @@
     </div>
   </div>
 </body>
-  <script src="js/list.js"></script>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+
 </html>

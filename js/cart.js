@@ -111,3 +111,23 @@ function total() {
     $('#payMoneyTxt').text(sum);
   }
 }
+
+/*
+ * 判断是否登录
+ * */
+
+if(localStorage.getItem('token')){
+
+  $('.head-nav li:first-child').html('<a href="javascript:">'+ localStorage.getItem('username') + '</a><a href="#" class="quit">退出</a> ');
+  var qt = $('.quit');
+  qt.click(function () {
+    console.log('点击');
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    var qt = $('.head-nav li:first-child');
+    qt.html('<a href="login.html" class="login">登录</a><a href="register.html" class="register">注册</a>');
+  });
+} else {
+  var qt = $('.head-nav li:first-child');
+  qt.html('<a href="login.html" class="login">登录</a><a href="register.html" class="register">注册</a>');
+}

@@ -37,7 +37,7 @@ shop.api.fetchGoodsDetail(goods_id, function (response) {
     goods_number = goods_number ?  parseInt(goods_number) + 1 : 1;
     //更新本地购买商品数量
     updateCartInfo(goods_id, goods_number,function () {
-     location.href = 'D:/js/project/liangcang-1/cn/cart.html';
+     location.href = '/cn/cart.html';
     });
   }
   oDiv.appendChild(oBtn);

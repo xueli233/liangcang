@@ -46,9 +46,17 @@
   position: absolute;
   z-index: 3;
   top: 110px;
+  width: 1000px;
 }
 .main #goods-category li {
   float: left;
+  width: 40px;
+  width: 164px;
+  padding-bottom: 37px;
+}
+.main #goods-category img {
+  width: 40px;
+  height: 40px;
 }
 .main .banner {
   /*banner的样式*/

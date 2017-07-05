@@ -168,6 +168,7 @@
 .foot-wrap .b-nav {
   /*底部导航*/
   overflow: hidden;
+  margin-top: 12px;
 }
 .foot-wrap .b-nav li {
   float: left;

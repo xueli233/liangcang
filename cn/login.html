@@ -7,21 +7,24 @@
   <script src="../js/jquery.js"></script>
   <script src="../js/common.js"></script>
   <script src="../js/login.js"></script>
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-<table>
-  <tr>
-    <th>用户名:</th>
-    <td><input type="text" name="username"></td>
-  </tr>
-  <tr>
-    <th>密码:</th>
-    <td><input type="password" name="password"></td>
-  </tr>
-  <tr>
-    <th></th>
-    <td><input type="button" value="登录" name="login" id="login"><a href="register.html">注册</a></td>
-  </tr>
-</table>
+<div class="container">
+  <a class="logo" href="../index.html">
+    <img src="../images/nlicon.png">
+  </a>
+  <p class="username">
+    <!--<span>用户名:</span>-->
+    <input type="text" name="username" placeholder="用户名">
+  </p>
+  <p class="password">
+    <!--<span>密码:</span>-->
+    <input type="password" name="password" placeholder="密码">
+  </p>
+  <p>
+    <input type="button" value="登录" name="login" id="login"><a href="register.html" class="register">注册</a>
+  </p>
+</div>
 </body>
 </html>

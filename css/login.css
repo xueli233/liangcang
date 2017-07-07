@@ -1,0 +1,36 @@
+.container {
+  width: 620px;
+  margin: 0 auto;
+}
+.container .logo img {
+  margin-left: 256px;
+}
+.container input {
+  line-height: 36px;
+  padding: 0 24px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  outline: none;
+}
+.container p {
+  text-align: center;
+}
+.container .username,
+.container .password {
+  padding: 24px 0 12px 0;
+}
+.container .username span,
+.container .password span {
+  display: inline-block;
+  width: 80px;
+}
+.container #login {
+  width: 80px;
+  margin-right: 36px;
+}
+.container .register {
+  color: #666;
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+}

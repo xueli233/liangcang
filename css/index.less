@@ -61,12 +61,68 @@
       height: 40px;
     }
   }
-  .banner{
-    /*banner的样式*/
+ .banner{
+  /*banner的样式*/
+  width: 1000px;
+  height: 475px;
+  margin: 0 auto;
+  position: absolute;
+  z-index:1;
+  .carousel{
+    /*轮播图*/
     position: relative;
-    z-index: 1;
-    height: 477px;
+    .btns{
+      /*按钮*/
+      position: absolute;
+      height: 50px;
+      width: 900px;
+      top: 225px;
+      left: 0;
+      padding:0 50px;
+      .leftBtn{
+        /*左按钮*/
+        float: left;
+        background: rgba(0,0,0,0.5) url(../images/normal_right.png) 0 0 no-repeat;
+      }
+      .rightBtn{
+        /*右按钮*/
+        float: right;
+        background: rgba(0,0,0,0.5) url(../images/normal_left.png) 0 0 no-repeat;
+      }
+      a{
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .circle{
+      /*小圆圈*/
+      position: absolute;
+      bottom: 60px;
+      left: 380px;
+      li{
+        margin:0 12px;
+        float: left;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: grey;
+      }
+      li.current{
+        background-color: purple;
+      }
+    }
+    .imageslist{
+      /*图片列表*/
+      li{
+        list-style: none;
+        display: none;
+      }
+      li.first{
+        display: block;
+      }
+    }
   }
+}
   .goods{
   /*商品详情*/
     li{

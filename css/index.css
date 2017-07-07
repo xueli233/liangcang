@@ -60,9 +60,63 @@
 }
 .main .banner {
   /*banner的样式*/
+  width: 1000px;
+  height: 475px;
+  margin: 0 auto;
+}
+.main .banner .carousel {
+  /*轮播图*/
   position: relative;
-  z-index: 1;
-  height: 477px;
+}
+.main .banner .carousel .btns {
+  /*按钮*/
+  position: absolute;
+  height: 50px;
+  width: 900px;
+  top: 225px;
+  left: 0;
+  padding: 0 50px;
+}
+.main .banner .carousel .btns .leftBtn {
+  /*左按钮*/
+  float: left;
+  background: rgba(0, 0, 0, 0.5) url(../images/normal_right.png) 0 0 no-repeat;
+}
+.main .banner .carousel .btns .rightBtn {
+  /*右按钮*/
+  float: right;
+  background: rgba(0, 0, 0, 0.5) url(../images/normal_left.png) 0 0 no-repeat;
+}
+.main .banner .carousel .btns a {
+  width: 50px;
+  height: 50px;
+}
+.main .banner .carousel .circle {
+  /*小圆圈*/
+  position: absolute;
+  bottom: 60px;
+  left: 380px;
+}
+.main .banner .carousel .circle li {
+  margin: 0 12px;
+  float: left;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: grey;
+}
+.main .banner .carousel .circle li.current {
+  background-color: purple;
+}
+.main .banner .carousel .imageslist {
+  /*图片列表*/
+}
+.main .banner .carousel .imageslist li {
+  list-style: none;
+  display: none;
+}
+.main .banner .carousel .imageslist li.first {
+  display: block;
 }
 .main .goods {
   /*商品详情*/

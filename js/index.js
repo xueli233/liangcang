@@ -1,4 +1,86 @@
-/*商品分类
+/*
+* 菜单hover
+*
+* */
+$('#shop').hover(function () {
+
+},function () {
+  
+});
+
+
+
+
+/*
+* 轮播图
+*
+* k*/
+//定义变量
+var val = 2000;  //时间间隔
+var  idx = 0;   //信号量
+var $lis = $('.imageslist li');    //图片列表
+var $cis = $('.circle li');    //小圆圈列表
+var timer;
+
+//1.设置定时器,定时换图片
+timer = setInterval(function () {
+  idx++;
+  handle();
+}, val);
+
+//2.鼠标移入停止
+$('.carousel').mouseenter(function () {
+  clearInterval(timer);
+});
+
+//3.鼠标移出继续
+$('.carousel').mouseleave(function () {
+  clearInterval(timer);
+  timer = setInterval(function () {
+    idx++;
+    handle();
+  }, val);
+});
+
+//4.按钮点击事件
+$('.btns').click(function (event) {
+  //如果是左按钮
+  if(event.target.className == 'leftBtn'){
+    idx--;
+    handle();
+    console.log(idx);
+  }
+
+  //如果是右按钮
+  if(event.target.className == 'rightBtn'){
+    idx++;
+    handle();
+    console.log(idx);
+  }
+});
+//5.小圆圈显示
+$('.circle').click(function (event) {
+  $(event.target).addClass('current').siblings().removeClass('current');
+  idx = $(event.target).index()+1;
+  handle();
+});
+
+/*
+* 事件处理函数
+*
+* */
+function handle() {
+  if (idx < 1) idx = 5;
+  if (idx > $lis.length) idx = 1;
+  $lis.eq(idx-1).addClass('first').siblings().removeClass('first');
+  $cis.eq(idx-1).addClass('current').siblings().removeClass('current');
+}
+
+
+
+
+/*
+ * 商品分类
  * */
 var goodsUl = $('#goods-ul');
 if(goodsUl){
@@ -18,9 +100,9 @@ if(goodsUl){
     }
   });
 }
-/*商品详情
- *
- *
+
+/*
+ * 商品详情
  * */
 var cat_id = $.getQueryString('cat_id');
 shop.api.fetchGoodsListByCatId(cat_id, function (response) {

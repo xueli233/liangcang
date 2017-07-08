@@ -66,6 +66,19 @@ window.shop = {
     fetchGoodsListByCatId : function (cat_id,callback) {
       $.get(shop.config.API_PREFIX + 'api_goods.php', "cat_id="+cat_id, callback, 'json');
     },
+    //同步ajax
+    fetchGoodsListByCatId0: function (cat_id, callback) {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if( xhr.readyState === 4){
+          callback = function () {
+            response = JSON.parse(xhr.responseText);
+          }
+        }
+      }
+      xhr.open('GET',shop.config.API_PREFIX + 'api_goods.php?cat_id=' + cat_id,false,'json');
+      xhr.send();
+    },
     //3
     fetchGoodsDetail : function (goods_id, callback) {
       $.get(shop.config.API_PREFIX + 'api_goods.php', "goods_id="+goods_id, callback, 'json');

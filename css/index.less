@@ -4,6 +4,9 @@
   height: 56px;
   background-color: #25292e;
 }
+a:hover{
+  color: #f40;
+}
 /*分类列表*/
 .main{
   overflow: hidden;
@@ -12,11 +15,11 @@
   @li-w:164px;
   .nav{
     /*导航*/
-    overflow: hidden;
+    //overflow: hidden;
     line-height: @nav-h;
     position: relative;
     z-index: 2;
-    .nav-list li{
+    .nav-list > li{
       float: left;
       width: @li-w;
       border-bottom: 4px solid #ededed;
@@ -28,13 +31,13 @@
         text-decoration: none;
       }
     }
-    .nav-list li:hover{
+    .nav-list >li:hover{
       border-bottom: 4px solid #000;
     }
     .nav-list .search{
       /*搜索*/
       width: 180px;
-      a{
+      >a{
         float: right;
       }
     }
@@ -43,31 +46,44 @@
       border-bottom: 4px solid #ededed;
     }
   }
+  .shop:hover #goods-category {
+    display: block;
+  }
   #goods-category{
     /*商店列表*/
     position: absolute;
-    z-index: 3;
-    top: 110px;
+    z-index: 9;
+    //top: 0px;
+    top:52px;
+    left: 0;
     width: 1000px;
-    //display: none;
-    li{
+    height: 200px;
+    //background-color: rgba(0,0,0,0.7);
+    background-color: #fff;
+    display: none;
+    //color: #fff;
+    .lis{
       float: left;
-      width: 40px;
-      width: @li-w;
-      padding-bottom: 37px;
-    }
-    img{
-      width: 40px;
-      height: 40px;
+      width: @li-w - 42px;
+      text-align: center;
+      height: 78px;
+      img{
+        width: 40px;
+        height: 40px;
+        display: block;
+        line-height: 40px;
+        margin-left:42px;
+      }
+      p{
+        line-height: 20px;
+      }
     }
   }
  .banner{
   /*banner的样式*/
   width: 1000px;
-  height: 475px;
-  margin: 0 auto;
-  position: absolute;
-  z-index:1;
+  //height: 475px;
+  margin: 0 auto 36px auto;
   .carousel{
     /*轮播图*/
     position: relative;
@@ -123,16 +139,52 @@
     }
   }
 }
-  .goods{
-  /*商品详情*/
-    li{
-      float: left;
-      padding-left:12px;
-      width: 20%;
+ .goods{
+/*商品详情*/
+  @width : 216px;
+  @height : 300px;
+  li{
+    margin-right:(1000px -  @width*4)/3px - 3px;
+  }
+   li.diy{
+     margin-right:0;
+   }
+  .items{
+    float: left;
+    width: @width;
+    margin-bottom: 46px;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    background-color: #fff;
+    .oImg{
+      display: block;
+      position: relative;
+      overflow: hidden;
+      height: @height;
+      width: @width;
       img{
-        width: 200px;
-        height: 200px;
+        width: @width;
+        height: @height;
+      }
+    }
+    .desc{
+      position: absolute;
+      left: 0;
+      top: -0;
+      padding: 12px;
+      width: @width - 24px;
+      height: @height - 24px;
+      line-height: 24px;
+      text-indent:24px;
+      color: #fff;
+      background-color: rgba(0,0,0,0.7);
+      display: none;
+      .price{
+        display: block;
+        color: #f40;
+        margin-top:48px;
       }
     }
   }
+}
 }

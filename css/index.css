@@ -4,6 +4,9 @@
   height: 56px;
   background-color: #25292e;
 }
+a:hover {
+  color: #f40;
+}
 /*分类列表*/
 .main {
   overflow: hidden;
@@ -11,58 +14,69 @@
 }
 .main .nav {
   /*导航*/
-  overflow: hidden;
   line-height: 48px;
   position: relative;
   z-index: 2;
 }
-.main .nav .nav-list li {
+.main .nav .nav-list > li {
   float: left;
   width: 164px;
   border-bottom: 4px solid #ededed;
   text-align: center;
   cursor: pointer;
 }
-.main .nav .nav-list li a {
+.main .nav .nav-list > li a {
   font-weight: 700;
   color: #000;
   text-decoration: none;
 }
-.main .nav .nav-list li:hover {
+.main .nav .nav-list > li:hover {
   border-bottom: 4px solid #000;
 }
 .main .nav .nav-list .search {
   /*搜索*/
   width: 180px;
 }
-.main .nav .nav-list .search a {
+.main .nav .nav-list .search > a {
   float: right;
 }
 .main .nav .nav-list .search:hover {
   border-bottom: 4px solid #ededed;
 }
+.main .shop:hover #goods-category {
+  display: block;
+}
 .main #goods-category {
   /*商店列表*/
   position: absolute;
-  z-index: 3;
-  top: 110px;
+  z-index: 9;
+  top: 52px;
+  left: 0;
   width: 1000px;
+  height: 200px;
+  background-color: #fff;
+  display: none;
 }
-.main #goods-category li {
+.main #goods-category .lis {
   float: left;
-  width: 40px;
-  width: 164px;
-  padding-bottom: 37px;
+  width: 122px;
+  text-align: center;
+  height: 78px;
 }
-.main #goods-category img {
+.main #goods-category .lis img {
   width: 40px;
   height: 40px;
+  display: block;
+  line-height: 40px;
+  margin-left: 42px;
+}
+.main #goods-category .lis p {
+  line-height: 20px;
 }
 .main .banner {
   /*banner的样式*/
   width: 1000px;
-  height: 475px;
-  margin: 0 auto;
+  margin: 0 auto 36px auto;
 }
 .main .banner .carousel {
   /*轮播图*/
@@ -122,11 +136,45 @@
   /*商品详情*/
 }
 .main .goods li {
-  float: left;
-  padding-left: 12px;
-  width: 20%;
+  margin-right: 42.33333333px;
 }
-.main .goods li img {
-  width: 200px;
-  height: 200px;
+.main .goods li.diy {
+  margin-right: 0;
+}
+.main .goods .items {
+  float: left;
+  width: 216px;
+  margin-bottom: 46px;
+  border: 1px solid #dcdcdc;
+  overflow: hidden;
+  background-color: #fff;
+}
+.main .goods .items .oImg {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 216px;
+}
+.main .goods .items .oImg img {
+  width: 216px;
+  height: 300px;
+}
+.main .goods .items .desc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px;
+  width: 192px;
+  height: 276px;
+  line-height: 24px;
+  text-indent: 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.main .goods .items .desc .price {
+  display: block;
+  color: #f40;
+  margin-top: 48px;
 }
